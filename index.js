@@ -135,13 +135,15 @@ function moveDodgerRight() {
  */
 
 
+function positionToInteger(p) {
+  return parseInt(p.split('px')[0]) || 0
+}
+
 function start() {
-  window.addEventListener('keydown', moveDodger)
+  document.addEventListener('keydown', moveDodger)
 
   START.style.display = 'none'
 
   gameInterval = setInterval(function() {
     createRock(Math.floor(Math.random() *  (GAME_WIDTH - 20)))
-  }, 1000)
-}
-
+  }, 100
