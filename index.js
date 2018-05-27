@@ -94,7 +94,9 @@ function endGame() {
 
 function moveDodger(e){
   var code = e.which
-  if()
+  if([LEFT_ARROW && RIGHT_ARROW] > -1) {
+    e.prevent
+  }
   // implement me!
   /**
    * This function should call `moveDodgerLeft()`
