@@ -94,7 +94,8 @@ function endGame() {
 
 function moveDodger(e){
   var code = e.which
-  if([LEFT_ARROW && RIGHT_ARROW] > -1) {
+  
+  if([LEFT_ARROW && RIGHT_ARROW].indexOf(code) > -1) {
     e.preventPropogation()
   }
   // implement me!
