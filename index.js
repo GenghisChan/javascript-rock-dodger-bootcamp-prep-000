@@ -38,7 +38,7 @@ function createRock(x) {
   rock.style.left = `${x}px`
 
   // Hmmm, why would we have used `var` here?
-  var top = 0 //top === 0 dont get confused with pixel height.. increment to lower 
+  var top = 0 
 
   rock.style.top = top
 
